@@ -24,7 +24,7 @@ export default function Aggridtablepost(){
     // recoger los datos de todos los post 
     useEffect(() => {
         
-        fetch('http://localhost:8800/api/posts/all')
+        fetch('https://social-app-adrian.herokuapp.com/api/posts/all')
               
             .then((response) => response.json())
             .then(rowData => setRowData(rowData))
@@ -55,7 +55,7 @@ export default function Aggridtablepost(){
                 }).then(function() {
                   
                     try {
-                       const res = axios.delete(`http://localhost:8800/api/posts/${event.data._id}`);
+                       const res = axios.delete(`https://social-app-adrian.herokuapp.com/api/posts/${event.data._id}`);
                        console.log(res.data)
                     } catch (error) {
                       console.log(error)

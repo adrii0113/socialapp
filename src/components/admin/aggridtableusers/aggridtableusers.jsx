@@ -55,8 +55,8 @@ export default function Aggridtableusers(){
                 } else {
 
                   Swal.fire('Eliminado!', '', 'success')
-                  axios.delete(`http://localhost:8800/api/posts/deleteposts/${event.data._id}`);
-                  axios.delete(`http://localhost:8800/api/users/adminDelete/${event.data._id}`);
+                  axios.delete(`https://social-app-adrian.herokuapp.com/api/posts/deleteposts/${event.data._id}`);
+                  axios.delete(`https://social-app-adrian.herokuapp.com/api/users/adminDelete/${event.data._id}`);
                   history.push("/adminPanel");
                 }
             } else if (result.isDenied) {
@@ -74,7 +74,7 @@ export default function Aggridtableusers(){
           icon: 'info',
           confirmButtonText: 'OK'
         })
-        fetch('http://localhost:8800/api/users/allusers')
+        fetch('https://social-app-adrian.herokuapp.com/api/users/allusers')
               
           .then((response) => response.json())
           .then(rowData => setRowData(rowData))
