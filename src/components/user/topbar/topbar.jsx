@@ -172,7 +172,7 @@ export default function Topbar() {
          <Link to={`/profile/${user.nombreUsuario}`}  style={{ textDecoration: 'none', color: 'white'}}>
          <span className="textIconButton">Perfil</span>
           <img
-            src={user.imagenPerfil || PF+"/person/noAvatar.png"}
+            src={user.imagenPerfil || "https://res.cloudinary.com/dtmuzq8to/image/upload/v1653948899/upload_/noAvatar_qbv5yk.png"}
             alt=""
             className="topbarImg"
           />

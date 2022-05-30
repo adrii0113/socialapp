@@ -34,12 +34,12 @@ export default function Profile() {
             <div className="profileCover">
               <img
                 className="profileCoverImg"
-                src={user.encabezado || PF+"/person/noCover.png"}
+                src={user.encabezado || "https://res.cloudinary.com/dtmuzq8to/image/upload/v1653948899/upload_/noCover_xq59jv.png"}
                 alt=""
               />
               <img
                 className="profileUserImg"
-                src={user.imagenPerfil || PF+"/person/noAvatar.png"}
+                src={user.imagenPerfil || "https://res.cloudinary.com/dtmuzq8to/image/upload/v1653948899/upload_/noAvatar_qbv5yk.png"}
                 alt=""
               />
             </div>

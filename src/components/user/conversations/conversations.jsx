@@ -29,7 +29,7 @@ export default function Conversation({ conversation, currentUser }) {
         src={
           user?.imagenPerfil
             ?  user.imagenPerfil
-            : PF + "person/noAvatar.png"
+            : "https://res.cloudinary.com/dtmuzq8to/image/upload/v1653948899/upload_/noAvatar_qbv5yk.png"
         }
         alt=""
       />

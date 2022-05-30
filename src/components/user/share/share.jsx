@@ -170,7 +170,7 @@ export default function Share() {
         <div className="shareTop">
           <img
             className="shareProfileImg"
-            src={user.imagenPerfil || PF+"/person/noAvatar.png"}
+            src={user.imagenPerfil || "https://res.cloudinary.com/dtmuzq8to/image/upload/v1653948899/upload_/noAvatar_qbv5yk.png"}
             alt=""
           />
           <input
