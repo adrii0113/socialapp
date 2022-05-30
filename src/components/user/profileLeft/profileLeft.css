@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.profileLeft{
+    color: white;
+    padding: 15px;
+    background-color: #14213d;
+    border: 1px solid #161220;
+    border-radius: 20px; 
+    font-family: 'Roboto', sans-serif;
+}

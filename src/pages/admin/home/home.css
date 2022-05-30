@@ -1,0 +1,74 @@
+/* .home-main-container{
+    display: flex;
+    height: 100%;
+}
+
+
+.topbarContainer{
+    flex: 5%;
+}
+.stats-container{
+    border: 2px solid black;
+    flex: 120%;
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.login-last-month{
+    flex: 40%;
+    border: 2px solid white;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.accounts-register-last-month{
+    flex: 50%;
+    border: 2px solid white;
+    margin: 10px;
+    border-radius: 20px;
+} */
+
+*{
+    padding:0;
+    margin:0;
+}
+
+
+.admin-main{
+    display: flex;
+}
+
+
+.stats-container{
+    flex:7.5;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px transparent solid;
+}
+.login-last-month{
+    flex: 40%;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.accounts-register-last-month{
+    flex: 40%;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.title-accounts-register-last-month{
+    text-align: center;
+    padding-top: 10px;
+}
+
+@media only screen and (max-width: 550px) {
+  
+
+
+    .list-item span{
+      display: none;
+    }
+   } 

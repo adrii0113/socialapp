@@ -1,0 +1,149 @@
+.editUser{
+    display: flex;
+    /* width: 100%; */
+    flex-wrap: wrap;
+}
+
+.inputContainer{
+    margin-right: 2px;
+    flex: 40%;
+    
+}
+.editInput{
+   width: 100%;
+} 
+.container {
+    /* width: 100%; */
+    /* max-width: 900px;  */
+    /* margin: 0 auto;  */
+    /* margin: 1rem; */
+    flex: 7;
+    margin-top: 20px;
+    
+  }
+  
+  .container * {
+    box-sizing: border-box;
+  }
+  
+
+
+  .form{
+      border: 2px transparent solid;
+      border-radius: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+      background-color: #14213d;
+      color: white;
+      padding: 20px;
+      
+  }
+  .editInput{
+    padding: 10px;
+    border: transparent 1px solid;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+
+  .select-image{
+    flex: 100%;
+    margin: 20px;
+  }
+  .submit-button{
+    flex: 100%;
+  }
+
+  .img-perfil{
+    flex: 100%;
+  }
+  
+  .imgprofile{
+    /* border: transparent 2px solid;
+    border-radius: 100%; */
+    flex: 100%;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 150px;
+    border: 3px solid white;
+  }
+
+  .editTtileForm{
+    flex: 100%;
+    margin-top: 10px;
+  }
+  .form-item{
+    /* flex: 50%; */
+    /* padding: 2px; */
+  }
+  /* body {
+    font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
+    background: #3AAFAB;
+    color: #fff;
+    padding: 50px 0;
+  } */
+
+  .editTtileForm{
+    text-align: center;
+    margin-bottom: 20px;
+    
+    color: white;
+  }
+  .container-main{
+    display: flex;
+    background-color: #ffff;
+}
+
+.editButton{
+  border: none;
+  padding: 7px;
+  border-radius: 10px;
+  /* background-color: green; */
+  background-color: #5555E6;
+  font-weight: 500;
+  margin-right: 20px;
+  cursor: pointer;
+  color: white;
+  margin-left: auto;
+    padding: 8px 16px;
+}
+.deleteButtonAccount{
+  
+  border: none;
+  padding: 7px;
+  border-radius: 10px;
+  /* background-color: green; */
+  background-color: red;
+  font-weight: 500;
+  margin-right: 20px;
+  cursor: pointer;
+  color: white;
+  margin-left: auto;
+    padding: 8px 16px;
+}
+.editImageButton{
+  border: none;
+  padding: 7px;
+  border-radius: 10px;
+  /* background-color: green; */
+  background-color: red;
+  font-weight: 500;
+  margin-right: 20px;
+  cursor: pointer;
+  color: white;
+  margin-left: auto;
+    padding: 8px 16px;
+}
+.editProfileImage{
+  flex: 100%;
+}
+.deleteAccount{
+  margin: 10px;
+  flex: 100%;
+}

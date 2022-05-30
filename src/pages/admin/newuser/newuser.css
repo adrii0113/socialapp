@@ -1,0 +1,77 @@
+ .newUserMainContainer{
+    display: flex;
+    background-color: white;
+}
+
+.new-user-main{
+  display: flex;
+}
+
+.sidebarAdminMenu{
+  flex: 1.5;
+}
+
+.form-container{
+  flex: 8;
+  /* height: 100%; */
+}
+
+.form{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.newUser {
+    flex: 2.5;
+    margin: 10px;
+  }
+  
+  .newUserForm {
+    display: flex;
+    flex-wrap: wrap;
+      height: 100%;
+  }
+
+  .form-item{
+    flex: 45%;
+    margin: 17px;
+    /* width: 20%; */
+    
+  }
+
+  .editInput{
+    border: 1px solid black;
+  }
+  .form-new-user{
+    display: flex;
+    flex-wrap: wrap;
+
+    border: 2px transparent solid;
+    text-align: center;
+    background-color: #caddf2;
+    color: black;
+    /* padding: 10px; */
+      height: 100%;
+  }
+  .title-new-user{
+    color: black;
+  }
+  
+  .editInput:invalid {
+    border: 2px solid red;
+  }
+  
+  .editInput:valid {
+    border: 2px solid green;
+  }
+ 
+
+
+  @media only screen and (max-width: 550px) {
+  
+
+
+    .list-item span{
+      display: none;
+    }
+   } 

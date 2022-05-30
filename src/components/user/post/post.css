@@ -1,0 +1,156 @@
+.post {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px; 
+    -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68); 
+    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68); 
+    margin: 30px 0;
+    /* border-bottom: 2px solid #f7f7f7; */
+    /* background-color: white; */
+    background-color: #14213d;
+    color: white;
+  }
+  
+  .postWrapper {
+    padding: 10px;
+  }
+  
+  .postTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .postTopLeft {
+    display: flex;
+    align-items: center;
+  }
+  
+  .postProfileImg {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .postUsername {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 10px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .postUsernameSign{
+    font-size: 13px;
+    color: #a1a1a1;
+    /* margin: 0 2px; */
+    margin-right: 0.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .postDate{
+      font-size: 12px;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .postCenter{
+      margin: 20px 0;
+      justify-content: center;
+      margin: 0.5rem;
+      margin-bottom: 2rem;
+      margin-left: 2.5rem;
+      font-family: Arial, Helvetica, sans-serif;
+      
+  }
+  
+  .postImg{
+      margin-top: 20px;
+      width: 95%;
+      max-height: 500px;
+      border: 2px solid transparent;
+      border-radius: 20px;
+      -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 0px 5px rgba(255,255,255,0), 5px 5px 0px 5px rgba(255,255,255,0); 
+box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 0px 5px rgba(255,255,255,0), 5px 5px 0px 5px rgba(255,255,255,0);
+
+
+/* -webkit-transform: scale(1); */
+    /* transform: scale(1); */
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+  
+
+  .postImg:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+
+
+  .hover01 figure img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+  .hover01 figure:hover img {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+    
+  
+  .postBottom{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-left: 2.5rem;
+      margin-right: 2.5rem;
+      font-family: Arial, Helvetica, sans-serif;
+      border-top: 2px #fca311 solid;
+      padding: 20px;
+  }
+  
+  .postBottomLeft{
+      display: flex;
+      align-items: flex-end;   
+      
+  }
+  
+  .likeIcon{
+      width: 24px;
+      height: 24px;
+      margin-right: 5px;
+      cursor: pointer;
+  }
+  
+  .postLikeCounter{
+      font-size: 15px;
+  }
+  
+  .postCommentText{
+      cursor: pointer;
+      border-bottom: 1px dashed gray;
+      font-size: 15px;
+  }
+
+  .interactOptions{
+    display: flex;
+    /* margin-left: 20px; */
+  }
+
+
+  .interactOption{
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+    cursor: pointer;
+    color:#fca311 ;
+  }
+
+
+  .deletePostIcon{
+    color:#FF0000;
+    cursor: pointer;
+    font-size: 24px;
+    margin-right: 40px;
+  }

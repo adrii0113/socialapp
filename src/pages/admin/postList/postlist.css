@@ -1,0 +1,22 @@
+.mainContainer{
+    display: flex;
+}
+
+ .ag-theme-alpine{
+    /* display: flex; */
+    max-width: 95%;
+} 
+
+.adminMenu{
+   width: 10%;
+}
+
+
+
+.oculta{
+    display: none;
+}
+
+.mostrar{
+    display: none;
+}
