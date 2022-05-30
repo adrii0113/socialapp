@@ -9,7 +9,7 @@ export default function ChatOnline({ onlineUsers, currentId, setCurrentChat }) {
 
   useEffect(() => {
     const getFriends = async () => {
-      const res = await axios.get("http://localhost:8800/api/users/friends/" + currentId);
+      const res = await axios.get("https://social-app-adrian.herokuapp.com/api/users/friends/" + currentId);
       
       setFriends(res.data);
     };
@@ -24,7 +24,7 @@ export default function ChatOnline({ onlineUsers, currentId, setCurrentChat }) {
   const handleClick = async (user) => {
     try {
       const res = await axios.get(
-        `http://localhost:8800/api/chat/find/${currentId}/${user._id}`
+        `https://social-app-adrian.herokuapp.com/api/chat/find/${currentId}/${user._id}`
       );
       setCurrentChat(res.data);
     } catch (err) {

@@ -17,7 +17,7 @@ export default function Profile() {
     useEffect(()=>{
       const fetchUser = async () =>{
   
-        const res = await axios.get(`http://localhost:8800/api/users?nombreUsuario=${nombreUsuario}`) 
+        const res = await axios.get(`https://social-app-adrian.herokuapp.com/api/users?nombreUsuario=${nombreUsuario}`) 
 
         setUser(res.data);
     }

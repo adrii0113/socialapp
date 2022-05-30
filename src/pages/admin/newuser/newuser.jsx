@@ -50,7 +50,7 @@ export default function Newuser(){
             password: password.current.value,
           };
           try {
-            await axios.post("http://localhost:8800/api/auth/registro", user);
+            await axios.post("https://social-app-adrian.herokuapp.com/api/auth/registro", user);
             
             Swal.fire({
               title: 'Usuario creado!',

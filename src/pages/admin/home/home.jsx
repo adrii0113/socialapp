@@ -21,7 +21,7 @@ export default function Home(){
    
     const loginLastMonth = async ()=>{
         try {
-            const res = await axios.get('http://localhost:8800/api/posts/all');
+            const res = await axios.get('https://social-app-adrian.herokuapp.com/api/posts/all');
             setPosts(
 
                 res.data.slice(5).sort((p1, p2) => {

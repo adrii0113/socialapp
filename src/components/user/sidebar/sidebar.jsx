@@ -22,7 +22,7 @@ export default function Sidebar() {
   useEffect(()=>{
     const fetchUsers = async () =>{
 
-      const res =  await axios.get("http://localhost:8800/api/users/allusers");
+      const res =  await axios.get("https://social-app-adrian.herokuapp.com/api/users/allusers");
       // return res.data;
       // console.log(res.data)
       setUsers(res.data)

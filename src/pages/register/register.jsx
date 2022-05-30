@@ -32,7 +32,7 @@ export default function Register() {
       try {
         
         // await axios.post("http://localhost:8800/api/auth/registro", user);
-        await axios.post("/api/api/auth/registro", user);
+        await axios.post("https://social-app-adrian.herokuapp.com/api/auth/registro", user);
         Swal.fire({
           title: 'Cuenta creada!',
           text: 'Cuenta creada satisfactoriamente',

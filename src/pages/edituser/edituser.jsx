@@ -40,7 +40,7 @@ export default function Edituser(){
             // ciudad: ciudad.current.value,
             imagenPerfil:url
         }
-         axios.put("http://localhost:8800/api/users/" + user._id, userDefined)
+         axios.put("https://social-app-adrian.herokuapp.com/api/users/" + user._id, userDefined)
        .then(function (response) {
            console.log(response);
          })
@@ -71,8 +71,8 @@ export default function Edituser(){
 
         Swal.fire('Cuenta eliminada!', '', 'success')
         try {
-          axios.delete(`http://localhost:8800/api/posts/deleteposts/${user._id}`);
-          axios.delete(`http://localhost:8800/api/users/${user._id}`
+          axios.delete(`https://social-app-adrian.herokuapp.com/api/posts/deleteposts/${user._id}`);
+          axios.delete(`https://social-app-adrian.herokuapp.com/api/users/${user._id}`
            
           );
           window.setTimeout(() => {
@@ -107,7 +107,7 @@ export default function Edituser(){
           // imagenPerfil:url
       }
       try {
-        axios.put("http://localhost:8800/api/users/" + user._id, userDefined)
+        axios.put("https://social-app-adrian.herokuapp.com/api/users/" + user._id, userDefined)
       .then(function (response) {
           console.log(response);
         })
@@ -201,7 +201,7 @@ export default function Edituser(){
       }
       console.log(url)
       try {
-        axios.put("http://localhost:8800/api/users/" + user._id, userDefined)
+        axios.put("https://social-app-adrian.herokuapp.com/api/users/" + user._id, userDefined)
       .then(function (response) {
           console.log(response);
         })
@@ -241,7 +241,7 @@ export default function Edituser(){
     useEffect(()=>{
         const fetchUser = async () =>{
     
-          const res = await axios.get(`http://localhost:8800/api/users?nombreUsuario=${nombreUsuario}`) 
+          const res = await axios.get(`https://social-app-adrian.herokuapp.com/api/users?nombreUsuario=${nombreUsuario}`) 
           setUser(res.data);
       }
         

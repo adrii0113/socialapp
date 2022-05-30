@@ -27,7 +27,7 @@ export default function Share() {
           desc: desc.current.value,
           img:url
         }
-       axios.post("http://localhost:8800/api/posts/",newPost)
+       axios.post("https://social-app-adrian.herokuapp.com/api/posts/",newPost)
        .then(function (response) {
            console.log(response);
          })
@@ -52,7 +52,7 @@ export default function Share() {
         img:url
       }
 
-     axios.post("http://localhost:8800/api/posts/",newPost)
+     axios.post("https://social-app-adrian.herokuapp.com/api/posts/",newPost)
      .then(function (response) {
       console.log(response);
     })
@@ -89,7 +89,7 @@ export default function Share() {
               desc: desc.current.value,
               img:url
             }
-           axios.post("http://localhost:8800/api/posts/",newPost)
+           axios.post("https://social-app-adrian.herokuapp.com/api/posts/",newPost)
            .then(function (response) {
             console.log(response);
           })

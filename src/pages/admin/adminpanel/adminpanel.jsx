@@ -120,7 +120,7 @@ export default function AdminPanel(){
     
   }
   useEffect(() => {
-    fetch('http://localhost:8800/api/users/allusers')
+    fetch('https://social-app-adrian.herokuapp.com/api/users/allusers')
           
           .then((response) => response.json())
           .then(rowData => setRowData(rowData))

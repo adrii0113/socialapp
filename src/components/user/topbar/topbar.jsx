@@ -35,7 +35,7 @@ export default function Topbar() {
 
   useEffect(()=>{
     const searchUser = async () =>{
-      const res = await axios.get("http://localhost:8800/api/users/allusers");
+      const res = await axios.get("https://social-app-adrian.herokuapp.com/api/users/allusers");
       setData(res.data)
 
 

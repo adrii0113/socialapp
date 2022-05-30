@@ -51,7 +51,7 @@ export default function Messenger() {
   useEffect(() => {
     const getConversations = async () => {
       try {
-        const res = await axios.get("http://localhost:8800/api/chat/" + user._id);
+        const res = await axios.get("https://social-app-adrian.herokuapp.com/api/chat/" + user._id);
         setConversations(res.data);
         
       } catch (err) {
@@ -64,7 +64,7 @@ export default function Messenger() {
   useEffect(() => {
     const getMessages = async () => {
       try {
-        const res = await axios.get("http://localhost:8800/api/chat/messages/" + currentChat?._id);
+        const res = await axios.get("https://social-app-adrian.herokuapp.com/api/chat/messages/" + currentChat?._id);
 
         setMessages(res.data);
       } catch (err) {
@@ -80,7 +80,7 @@ export default function Messenger() {
       let reciver = currentChat.members[1];
       console.log(reciver)
       try {
-        const res = await axios.post("http://localhost:8800/api/users/" + reciver);
+        const res = await axios.post("https://social-app-adrian.herokuapp.com/api/users/" + reciver);
         console.log(res.data)
       } catch (error) {
         console.log(error)
@@ -112,7 +112,7 @@ export default function Messenger() {
       });
   
       try {
-        const res = await axios.post("http://localhost:8800/api/chat/messages/", message);
+        const res = await axios.post("https://social-app-adrian.herokuapp.com/api/chat/messages/", message);
         setMessages([...messages, res.data]);
         setNewMessage("");
       } catch (err) {

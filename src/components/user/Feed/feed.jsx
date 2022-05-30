@@ -15,8 +15,8 @@ export default function Feed({nombreUsuario}) {
     const fetchPosts = async () =>{
 
       const res = nombreUsuario 
-      ? await axios.get("http://localhost:8800/api/posts/profile/" + nombreUsuario) 
-      :await axios.get("http://localhost:8800/api/posts/timeline/" + user._id)
+      ? await axios.get("https://social-app-adrian.herokuapp.com/api/posts/profile/" + nombreUsuario) 
+      :await axios.get("https://social-app-adrian.herokuapp.com/api/posts/timeline/" + user._id)
       setPosts(
         res.data.sort((p1, p2) => {
           return new Date(p2.createdAt) - new Date(p1.createdAt);

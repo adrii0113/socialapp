@@ -27,7 +27,7 @@ export default function Post({ post }) {
 
   const loadImages = async () => {
     try {
-        const res = await fetch('http://localhost:8800/api/images');
+        const res = await fetch('https://social-app-adrian.herokuapp.com/api/images');
         const data = await res.json();
         // console.log(data)
         setImageIds(data);
@@ -50,7 +50,7 @@ export default function Post({ post }) {
 
     const fetchUser = async () => {
 
-      const res = await axios.get(`http://localhost:8800/api/users?userId=${post.userId}`)
+      const res = await axios.get(`https://social-app-adrian.herokuapp.com/api/users?userId=${post.userId}`)
       setUser(res.data);
     } 
 
@@ -60,7 +60,7 @@ export default function Post({ post }) {
 
   const likeHandler =()=>{
     try {
-      axios.put("http://localhost:8800/api/posts/" +  post._id + "/like", {userId: currentUser._id});
+      axios.put("https://social-app-adrian.herokuapp.com/api/posts/" +  post._id + "/like", {userId: currentUser._id});
 
     } catch (err) {console.log(err)}
 
@@ -81,7 +81,7 @@ export default function Post({ post }) {
       }).then((result) => {
         if (result.isConfirmed) {
           Swal.fire('Eliminado!', '', 'success')
-          axios.delete("http://localhost:8800/api/posts/"+ post._id)
+          axios.delete("https://social-app-adrian.herokuapp.com/api/posts/"+ post._id)
           // history.push("/login");
         } else if (result.isDenied) {
           Swal.fire('El post no ha sido eliminado', '', 'info')

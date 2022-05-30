@@ -44,7 +44,7 @@ export default function Rightbar({ user }) {
     const getFriends = async () => {
       try {
         
-        const friendList = await axios.get("http://localhost:8800/api/users/friends/" + user._id);
+        const friendList = await axios.get("https://social-app-adrian.herokuapp.com/api/users/friends/" + user._id);
         
         setFriends(friendList.data);
       } catch (err) {
@@ -57,7 +57,7 @@ export default function Rightbar({ user }) {
   useEffect(()=>{
     const getPosts = async () =>{
 
-      const res =  await axios.get("http://localhost:8800/api/posts/all");
+      const res =  await axios.get("https://social-app-adrian.herokuapp.com/api/posts/all");
 
       setPosts(
         res.data.sort((p1, p2) => {
@@ -73,12 +73,12 @@ export default function Rightbar({ user }) {
   const handleClick = async () => {
     try {
       if (followed) {
-        await axios.put(`http://localhost:8800/api/users/${user._id}/dejarseguir`, {
+        await axios.put(`https://social-app-adrian.herokuapp.com/api/users/${user._id}/dejarseguir`, {
           userId: currentUser._id,
         });
         dispatch({ type: "UNFOLLOW", payload: user._id });
       } else {
-        await axios.put(`http://localhost:8800/api/users/${user._id}/seguir`, {
+        await axios.put(`https://social-app-adrian.herokuapp.com/api/users/${user._id}/seguir`, {
           userId: currentUser._id,
         });
         dispatch({ type: "FOLLOW", payload: user._id });
@@ -95,7 +95,7 @@ export default function Rightbar({ user }) {
     console.log(followed)
     if (!followed) {
       try {
-        await axios.put(`http://localhost:8800/api/users/${user._id}/dejarseguir`, {
+        await axios.put(`https://social-app-adrian.herokuapp.com/api/users/${user._id}/dejarseguir`, {
             userId: currentUser._id,
           });
           setFollowed(!followed)
@@ -129,7 +129,7 @@ export default function Rightbar({ user }) {
     if(!followed){
 
       try {
-        await axios.put(`http://localhost:8800/api/users/${user._id}/seguir`, {
+        await axios.put(`https://social-app-adrian.herokuapp.com/api/users/${user._id}/seguir`, {
             userId: currentUser._id,
           });
           setFollowed(followed)
@@ -174,7 +174,7 @@ export default function Rightbar({ user }) {
     };
 
     try {
-      const res = await axios.get("http://localhost:8800/api/chat/find/" + reciverId + "/" + senderId);
+      const res = await axios.get("https://social-app-adrian.herokuapp.com/api/chat/find/" + reciverId + "/" + senderId);
       console.log(res.data.members.length)
       if (res.data.members.length == 2) {
         
@@ -188,7 +188,7 @@ export default function Rightbar({ user }) {
     if (!chatExists) {
       
       try {
-        await axios.post("http://localhost:8800/api/chat", userParams);
+        await axios.post("https://social-app-adrian.herokuapp.com/api/chat", userParams);
         Swal.fire({
           title: 'Conversación iniciada!',
           text: 'Sera redirigido al chat',
