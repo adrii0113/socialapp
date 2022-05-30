@@ -311,7 +311,7 @@ export default function Edituser(){
                 <div className="img-perfil">
                     <img
                       className="imgprofile"
-                      src={user.imagenPerfil || PF+"/person/noAvatar.png"}
+                      src={user.imagenPerfil || "https://res.cloudinary.com/dtmuzq8to/image/upload/v1653948899/upload_/noAvatar_qbv5yk.png"}
                       alt=""
                       
                     />

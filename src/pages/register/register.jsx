@@ -78,7 +78,7 @@ export default function Register() {
                   <input
 
                     maxLength={64}
-                    pattern={"[a-zA-Z/s]"}
+                    pattern={"[a-zA-Z]{1,15}"}
                     required
                     ref={nombreCompleto}
                         
@@ -114,7 +114,7 @@ export default function Register() {
                   <input
 
                       required
-                      // pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 3}$"
+                      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 3}$"
                       ref={password}
                       type="password"
                         
@@ -126,7 +126,7 @@ export default function Register() {
                   <input
 
                       required
-                      // pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 3}$"
+                      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 3}$"
                       ref={passwordAgain}
                       type="password"
                         
