@@ -117,6 +117,7 @@ export default function Register() {
                       pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 3}$"
                       ref={password}
                       type="password"
+                      min="2004-05-30" 
                         
                       />
                     <label>Password</label>
