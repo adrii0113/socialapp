@@ -328,7 +328,7 @@ export default function Rightbar({ user }) {
             <Link to={"/profile/" + friend.nombreUsuario}>
               <div className="rightbarFollowing">
               <img
-                src={friend.imagenPerfil ? PF+friend.profilePicture : PF+"person/noAvatar.png"}
+                src={friend.imagenPerfil ? PF+friend.profilePicture : "https://res.cloudinary.com/dtmuzq8to/image/upload/v1653948899/upload_/noAvatar_qbv5yk.png"}
                 alt=""
                 className="rightbarFollowingImg"
                 />
