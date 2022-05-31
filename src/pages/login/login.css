@@ -250,7 +250,7 @@
     display: block;
   }
   
-  
+/*   
   .login-box a span:nth-child(1) {
     top: 0;
     left: -100%;
@@ -258,9 +258,9 @@
     height: 2px;
     background: linear-gradient(90deg, transparent, #03e9f4);
     animation: btn-anim1 1s linear infinite;
-  }
+  } */
   
-  @keyframes btn-anim1 {
+  /* @keyframes btn-anim1 {
     0% {
       left: -100%;
     }
@@ -277,18 +277,18 @@
     background: linear-gradient(180deg, transparent, #03e9f4);
     animation: btn-anim2 1s linear infinite;
     animation-delay: .25s
-  }
+  } */
   
-  @keyframes btn-anim2 {
+  /* @keyframes btn-anim2 {
     0% {
       top: -100%;
     }
     50%,100% {
       top: 100%;
     }
-  }
+  } */
   
-  .login-box a span:nth-child(3) {
+  /* .login-box a span:nth-child(3) {
     bottom: 0;
     right: -100%;
     width: 100%;
@@ -306,8 +306,8 @@
       right: 100%;
     }
   }
-  
-  .login-box a span:nth-child(4) {
+   */
+  /* .login-box a span:nth-child(4) {
     bottom: -100%;
     left: 0;
     width: 2px;
@@ -324,7 +324,7 @@
     50%,100% {
       bottom: 100%;
     }
-  }
+  } */
 
   /* media */
   @media screen and (max-width: 430px) {

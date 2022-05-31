@@ -105,7 +105,7 @@ export default function Register() {
                       required
                       ref={nacimiento}
                       type="date"
-                      min="2004-05-30" 
+                      min="30-05-2004" 
                       
                       />
                     <label>Fecha de nacimiento</label>

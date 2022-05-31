@@ -22,9 +22,7 @@ main {
 
 @media only screen and (max-width: 768px) {
   
-    .topbarContainer{
-        /* display: none; */
-    }
+    
 
     .rightbar{
         display: none;
@@ -39,9 +37,7 @@ main {
 
    @media only screen and (max-width: 400px) {
   
-    .topbarContainer{
-        /* display: none; */
-    }
+    
 
     .rightbar{
         display: none;
