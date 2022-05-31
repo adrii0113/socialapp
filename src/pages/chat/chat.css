@@ -138,6 +138,9 @@
     }
 
     .chatMenuWrapper{
+      /* display: none; */
+    }
+    .conversationName{
       display: none;
     }
   
