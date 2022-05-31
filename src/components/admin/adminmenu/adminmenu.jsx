@@ -20,13 +20,7 @@ export default function Adminmenu(){
         <div class="sidebar-center">
             <ul class="list">
 
-                <Link to={'/admin/home'}  style={{ textDecoration: 'none', color:'white' }}>
-                <li className="list-item">
-                    <AiOutlineHome className="sidebarIcon" />
-                    {/* <FeedIcon></FeedIcon> */}
-                    <span className="sidebarListItemText">Inicio</span>
-                </li>
-                </Link>
+                
 
                 <Link to={'/admin/userlist'}  style={{ textDecoration: 'none', color:'white' }}>
                 <li className="list-item">
